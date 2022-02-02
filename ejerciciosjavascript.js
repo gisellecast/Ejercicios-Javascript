@@ -1,8 +1,10 @@
+//EJERCICIO 1//
+
 const ejercicio1 = [
     3, 100, 85, 64, 46, 39, 40, 30, 20, 24, 25, 6, 10, 54, 82, 71, 67, 77, 17, 29,
     19, 88, 456, 13, 23, 24
 ];
-
+// solución ejercicio 1:
 //con esta funcion voy a mostrar los numeros primos del arreglo
 function primo(arreglonumeros) {
     //Empieza el ciclo for, vamos a contar el # de casillas del arreglo;
@@ -32,7 +34,7 @@ function primo(arreglonumeros) {
 
 primo(ejercicio1);
 
-
+//EJERCICIO 2//
 
 const ejercicio2 = [
     {
@@ -66,3 +68,46 @@ const ejercicio2 = [
         esFamiliar: true,
     },
 ];
+
+
+// solución ejercicio 2:
+
+let invitados = []
+// iniciamos el for indicando donde empieza i; hasta donde llega i; como irá avanzando i "conteo de casillas del arreglo"
+for (let i = 0; i < ejercicio2.length; i++) {
+    //declaramos la condicion (que sean familiares mayores de 18 años) trayendo let edad >=18 && let esFamiliar
+    if (ejercicio2[i].edad >= 18 && ejercicio2[i].esFamiliar) {
+        // imprimimos las diferentes variables de nombre que cumplan la condicion anterior y los invitamos a pasar a la fiesta
+        console.log(ejercicio2[i].nombre + " puede pasar a la fiesta")
+    }
+}
+
+
+//EJERCICIO 3//
+
+//sucesión fibonacci: (1, 1, 2, 3, 5, 8, 13, 21)//
+
+let numfibo = 1;
+let numfiboA = 0;
+let numfiboB = 0;
+
+//Imprimo el numerofibo de inicio
+console.log(numfibo);
+
+numfiboA = numfibo;
+
+for (let i = 0; i < 50; i++) {
+    numfibo = numfiboA + numfiboB;
+
+    //Imprimo el numerofibo que sigue en la sucesión
+    console.log(numfibo);
+
+    numfiboA = numfiboB;
+    numfiboB = numfibo;
+}
+
+if (numfiboB = 0) {
+
+}
+
+
